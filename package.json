@@ -9,6 +9,8 @@
     "webpack-without-resolve-url-loader": "webpack --config ./webpack-without-resolve-url-loader.config.js",
     "prenode-sass": "mkdirp ./dist/node-sass",
     "node-sass": "node-sass ./src/main.scss > ./dist/node-sass/main.css",
+    "preruby-sass": "mkdirp ./dist/ruby-sass",
+    "ruby-sass": "sass ./src/main.scss > ./dist/ruby-sass/main.css",
     "parcel": "parcel main.scss -d ./dist/parcel"
   },
   "repository": {

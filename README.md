@@ -33,6 +33,7 @@ You can run the following tasks:
 - `npm run webpack` = executes webpack build with default configuration (`webpack.config.js`), outputting to `dist/webpack`.
 - `npm run webpack-without-resolve-url-loader` = executes webpack build with configuration without `resolve-url-loader` (`webpack-without-resolve-url-loader.config.js`), outputting to `dist/webpack-without-resolve-url-loader`.
 - `npm run node-sass` = executes SASS build (node-sass) outputting to `dist/node-sass`.
+- `npm run ruby-sass` = executes SASS build (Ruby SASS, e.g. `sudo gem install sass`) outputting to `dist/ruby-sass`.
 - `npm run parcel` = executes Parcel build outputting to `dist/parcel`.
 
 ## Webpack
@@ -45,11 +46,11 @@ You can run the following tasks:
 
 ## SASS
 
-*Option A:* Doesn't work. Uncomment `src/foo/bar.scss` line 5 and try running `npm run node-sass`.
+*Option A:* Doesn't work. Uncomment `src/foo/bar.scss` line 5 and try running `npm run node-sass` or `npm run ruby-sass`.
 
-*Option B:* Works. Uncomment `src/foo/bar.scss` line 6 and run `npm run node-sass`.
+*Option B:* Works. Uncomment `src/foo/bar.scss` line 6 and run `npm run node-sass` or `npm run ruby-sass`.
 
-*Option C:* Doesn't work. Uncomment `src/foo/bar.scss` line 7 and try running `npm run node-sass` .
+*Option C:* Doesn't work. Uncomment `src/foo/bar.scss` line 7 and try running `npm run node-sass` or `npm run ruby-sass`.
 
 ## Parcel
 
