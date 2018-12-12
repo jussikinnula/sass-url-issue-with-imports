@@ -11,10 +11,9 @@ Place image file in same directory of component's SCSS and import the component 
 On this example we have `src/main.scss` which imports `src/foo/bar.scss`.
 
 The options for requiring image are:
-
-A) `url('./bar.png')`
-B) `url('foo/bar.png')` 
-C) `url('bar.png')`
+- *Option A:* `url('./bar.png')`
+- *Option B:* `url('foo/bar.png')` 
+- *Option C:* `url('bar.png')`
 
 ### Desired outcome
 
