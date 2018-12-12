@@ -1,0 +1,38 @@
+{
+  "name": "sass-url-issue-with-imports",
+  "version": "0.0.1",
+  "description": "This is example describing issue with url's in SCSS files, when importing",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "webpack": "webpack",
+    "webpack-without-resolve-url-loader": "webpack --config ./webpack-without-resolve-url-loader.config.js",
+    "prenode-sass": "mkdirp ./dist/node-sass",
+    "node-sass": "node-sass ./src/main.scss > ./dist/node-sass/main.css",
+    "parcel": "parcel main.scss -d ./dist/parcel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jussikinnula/sass-url-issue-with-imports.git"
+  },
+  "author": "Jussi Kinnula <jussi.kinnula@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jussikinnula/sass-url-issue-with-imports/issues"
+  },
+  "homepage": "https://github.com/jussikinnula/sass-url-issue-with-imports#readme",
+  "devDependencies": {
+    "css-loader": "^2.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^2.0.0",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.11.0",
+    "parcel": "^1.10.3",
+    "resolve-url-loader": "^3.0.0",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  }
+}

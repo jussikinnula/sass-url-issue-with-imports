@@ -1,0 +1,10 @@
+.bar {
+  width: 20px;
+  height: 20px;
+  // Uncomment one of the background-image lines, to see what happens :-)
+  // background-image: url('./bar.png'); // this works with webpack with resolve-url-loader
+  // background-image: url('foo/bar.png'); // this works with node-sass, parcel and webpack without resolve-url-loader
+  // background-image: url('bar.png'); // this doesn't work at all
+  background-repeat: no-repeat;
+  background-size: cover;
+}
